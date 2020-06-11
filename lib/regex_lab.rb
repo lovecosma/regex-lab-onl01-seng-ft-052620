@@ -19,8 +19,6 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   response = text.match(^[A-Z])
   response_two = text.match(/\W$/)
-
-  binding.pry
   if response == nil || response_two == nil
     return false
   else
